@@ -60,15 +60,49 @@ html {
     border-radius: 50px;
 }
 .fab{
-  
     position: relative;
     left: 78%;
-    bottom: 30px;
-    margin-left: 40px;
+    bottom: 40px;
+    margin-left: 20px;
+
+
+}
+.fa-github,.fa-linkedin,.fa-instagram{
+   height: 20px;
+   width: 20px;
+   /* border: 1px solid rgb(255, 255, 255); */
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+   border-radius: 20px;
+   padding: 3px;
+    color: white;
+    font-size: 20px;
+  
+}
+.fa-linkedin{
+    padding-left: 5.5px;
+}
+.fa-instagram{
+    padding-left: 5.5px;
 }
 .number-section{
-    position: relative;
-    height: 90px;
-    width: 90px;
-    border: 1px solid black;
+    height: 50%;
+    width: 80%;
+    border-radius: 7px;
+   
+   
+    margin: 0 auto;
+    margin-top: 60px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#header{
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: "Playwrite AR", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
 }
