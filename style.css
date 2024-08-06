@@ -12,16 +12,16 @@ html {
 
 }
 
-.background-container {
-    /* width: 100vw;
-    height: 100vh; */
-    /* background: url(/reference_background_images/img6.jpg); */
+/* .background-container {
+    width: 100vw;
+    height: 100vh;
+    background: url(/reference_background_images/img6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
-.numbers-section {
-    height: 60%;
+.top-section {
+    height: 80%;
     width: 65%;
     /* border: 1px solid black; */
     position: absolute;
@@ -58,4 +58,17 @@ html {
 
 #logo {
     border-radius: 50px;
+}
+.fab{
+  
+    position: relative;
+    left: 78%;
+    bottom: 30px;
+    margin-left: 40px;
+}
+.number-section{
+    position: relative;
+    height: 90px;
+    width: 90px;
+    border: 1px solid black;
 }
