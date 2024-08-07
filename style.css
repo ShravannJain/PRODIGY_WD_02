@@ -59,23 +59,23 @@ html {
 #logo {
     border-radius: 50px;
 }
-.fab{
-    position: relative;
+.social-handles{
+    position: absolute;
     left: 78%;
-    bottom: 40px;
-    margin-left: 20px;
-
-
+    bottom: 85.6%;
+    margin-left: -5px;
 }
 .fa-github,.fa-linkedin,.fa-instagram{
+   
    height: 20px;
    width: 20px;
-   /* border: 1px solid rgb(255, 255, 255); */
+ 
    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
    border-radius: 20px;
    padding: 3px;
     color: white;
     font-size: 20px;
+    margin-left: 15px;
   
 }
 .fa-linkedin{
@@ -88,8 +88,6 @@ html {
     height: 50%;
     width: 80%;
     border-radius: 7px;
-   
-   
     margin: 0 auto;
     margin-top: 60px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -97,7 +95,7 @@ html {
 #header{
     position: absolute;
     left: 50%;
-    top: 22%;
+    top: 19%;
     transform: translate(-50%,-50%);
     text-align: center;
     color: white;
@@ -105,4 +103,61 @@ html {
     font-family: "Playwrite AR", cursive;
     font-optical-sizing: auto;
     font-weight: 900;
+}
+.div-container {
+    height: 80%;
+    width: 90%;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 0 auto;
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    
+}
+
+.div-container span{
+    font-size: 70px;
+    font-family: "Playwrite AR", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    color: white;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    width: 130px;
+    position: relative;
+   
+}
+.colon{
+    position: relative;
+    top: 20px;
+    color: white;
+}
+.div-container span::after{
+    font-size: 15px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.minutes,.second,.mili-second {
+    height: 150px;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    float: left;
+    /* background-color: rgb(0, 0, 0);     */
+    margin-top: 35px;
+    
+}
+.minutes::after{
+    content: 'minutes';
+}
+.second::after{
+    content: 'second';
+}
+.mili-second::after{
+    content: 'mili-sec';
 }
