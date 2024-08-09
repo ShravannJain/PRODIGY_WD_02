@@ -11,10 +11,11 @@
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;900&family=Merriweather&family=Playwrite+AR:wght@100..400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script src="script.js"></script>
     <title>Stop Watch </title>
 </head>
 
-<body>
+<body onload="run()">
     <section class="background-container">
         <section class="top-section">
 
@@ -34,20 +35,28 @@
             </header>
             <section class="number-section">
                 <div class="div-container">
-                    <span class="minutes"></span>
+                    <span class="minutes" id="min"></span>
                     <span class="colon">:</span>
-                    <span class="second"></span>
+                    <span class="second" id="sec"></span>
                     <span class="colon">:</span>
-                    <span class="mili-second"></span>
+                    <span class="mili-second" id="mili-sec"></span>
                 </div>
+                    <section class="laps-container">
+                        <h2>Lap Times</h2>
+                        <ul id="laps-list">
+                            <!-- Lap times will be added here -->
+                        </ul>
+                    </section>
                 <div class="buttons">
-                    <input class="item" type="button" value="Reset">
-                    <input class="item" type="button" value="Start">
-                    <input class="item" type="button" value="Split">
+                    <input class="item" id="start-btn" onclick="run()" type="button" value="Start">
+                    <input class="item" id="reset-btn" onclick="reset()" type="button" value="Reset">
+                    <input class="item" id="lap-btn" onclick="laps()" type="button" value="Split">
                 </div>
 
             </section>
+         
         </section>
+
     </section>
 </body>
 
